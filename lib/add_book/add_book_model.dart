@@ -6,8 +6,9 @@ class AddBookModel extends ChangeNotifier {
 
   Future addBook() async {
     if (this.bookTitle.isEmpty) {
-      throw '入力してください。';
+      throw 'タイトルを入力してください。';
     }
-    Firestore.instance.collection('books').add({"title": this.bookTitle});
+
+    Firestore.instance.collection('books').add({'title': this.bookTitle});
   }
 }

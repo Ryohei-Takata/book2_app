@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   RaisedButton(
+                    child: Text("一覧"),
                     onPressed: () {
                       // model.changeBookText();
                       Navigator.push(
